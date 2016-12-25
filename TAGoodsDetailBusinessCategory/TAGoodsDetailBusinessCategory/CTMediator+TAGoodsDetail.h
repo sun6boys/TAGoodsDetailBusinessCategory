@@ -1,5 +1,5 @@
 //
-//  TAGoodsDetail.h
+//  CTMediator+TAGoodsDetail.h
 //  TAGoodsDetailBusinessCategory
 //
 //  Created by Charon on 16/12/25.
@@ -9,7 +9,7 @@
 #import <CTMediator/CTMediator.h>
 #import <UIKit/UIKit.h>
 
-@interface TAGoodsDetail : CTMediator
+@interface CTMediator (TAGoodsDetail)
 
 - (UIViewController *)goodsDetailViewControllerWithGoodsId:(NSString *)goodsId goodsName:(NSString *)goodsName;
 

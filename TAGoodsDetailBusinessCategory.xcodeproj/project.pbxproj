@@ -15,7 +15,7 @@
 		90C7B4891E0FA9B80039B030 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90C7B4871E0FA9B80039B030 /* LaunchScreen.storyboard */; };
 		90C7B4941E0FA9B80039B030 /* TAGoodsDetailBusinessCategoryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C7B4931E0FA9B80039B030 /* TAGoodsDetailBusinessCategoryTests.m */; };
 		90C7B49F1E0FA9B80039B030 /* TAGoodsDetailBusinessCategoryUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C7B49E1E0FA9B80039B030 /* TAGoodsDetailBusinessCategoryUITests.m */; };
-		90C7B4EE1E0FB9F70039B030 /* TAGoodsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C7B4ED1E0FB9F70039B030 /* TAGoodsDetail.m */; };
+		90C7B5371E0FBEE20039B030 /* CTMediator+TAGoodsDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C7B5361E0FBEE20039B030 /* CTMediator+TAGoodsDetail.m */; };
 		BF04D75DA06DA04DDE5F4245 /* libPods-TAGoodsDetailBusinessCategoryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB94E288F8D90B8A4E106C63 /* libPods-TAGoodsDetailBusinessCategoryTests.a */; };
 		D49CFACC1F6EF64B77D02AA2 /* libPods-TAGoodsDetailBusinessCategoryUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AF788C07CDA7C7D5EE8C7DCA /* libPods-TAGoodsDetailBusinessCategoryUITests.a */; };
 		E8143F460E671A1A42FD8F57 /* libPods-TAGoodsDetailBusinessCategory.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44227DB3184C0E90006CB7FA /* libPods-TAGoodsDetailBusinessCategory.a */; };
@@ -60,8 +60,8 @@
 		90C7B49A1E0FA9B80039B030 /* TAGoodsDetailBusinessCategoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TAGoodsDetailBusinessCategoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C7B49E1E0FA9B80039B030 /* TAGoodsDetailBusinessCategoryUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAGoodsDetailBusinessCategoryUITests.m; sourceTree = "<group>"; };
 		90C7B4A01E0FA9B80039B030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		90C7B4EC1E0FB9F70039B030 /* TAGoodsDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAGoodsDetail.h; sourceTree = "<group>"; };
-		90C7B4ED1E0FB9F70039B030 /* TAGoodsDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAGoodsDetail.m; sourceTree = "<group>"; };
+		90C7B5351E0FBEE20039B030 /* CTMediator+TAGoodsDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CTMediator+TAGoodsDetail.h"; sourceTree = "<group>"; };
+		90C7B5361E0FBEE20039B030 /* CTMediator+TAGoodsDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+TAGoodsDetail.m"; sourceTree = "<group>"; };
 		AF788C07CDA7C7D5EE8C7DCA /* libPods-TAGoodsDetailBusinessCategoryUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAGoodsDetailBusinessCategoryUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B981B6F9C9BBE5A5E66FF70C /* Pods-TAGoodsDetailBusinessCategoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TAGoodsDetailBusinessCategoryUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TAGoodsDetailBusinessCategoryUITests/Pods-TAGoodsDetailBusinessCategoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB94E288F8D90B8A4E106C63 /* libPods-TAGoodsDetailBusinessCategoryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TAGoodsDetailBusinessCategoryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,8 +164,8 @@
 		90C7B4EB1E0FB9DE0039B030 /* TAGoodsDetailBusinessCategory */ = {
 			isa = PBXGroup;
 			children = (
-				90C7B4EC1E0FB9F70039B030 /* TAGoodsDetail.h */,
-				90C7B4ED1E0FB9F70039B030 /* TAGoodsDetail.m */,
+				90C7B5351E0FBEE20039B030 /* CTMediator+TAGoodsDetail.h */,
+				90C7B5361E0FBEE20039B030 /* CTMediator+TAGoodsDetail.m */,
 			);
 			path = TAGoodsDetailBusinessCategory;
 			sourceTree = "<group>";
@@ -473,9 +473,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90C7B5371E0FBEE20039B030 /* CTMediator+TAGoodsDetail.m in Sources */,
 				90C7B4811E0FA9B80039B030 /* ViewController.m in Sources */,
 				90C7B47E1E0FA9B80039B030 /* AppDelegate.m in Sources */,
-				90C7B4EE1E0FB9F70039B030 /* TAGoodsDetail.m in Sources */,
 				90C7B47B1E0FA9B80039B030 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
